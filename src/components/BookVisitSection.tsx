@@ -155,9 +155,8 @@ export const BookVisitSection: React.FC = () => {
                   >
                     <option value="09:00 AM (Morning Circle & Arrival)">09:00 AM (Morning Circle & Arrival)</option>
                     <option value="09:30 AM (Classroom Work Observation)">09:30 AM (Classroom Work Observation)</option>
-                    <option value="10:30 AM (Creative & Outdoor Play)">10:30 AM (Creative & Outdoor Play)</option>
-                    <option value="12:30 PM (After-School Tour & Consultation)">12:30 PM (After-School Tour & Consultation)</option>
-                    <option value="02:00 PM (Afternoon Office Appointment)">02:00 PM (Afternoon Office Appointment)</option>
+                    <option value="10:30 AM (Montessori Activity Time)">10:30 AM (Montessori Activity Time)</option>
+                    <option value="11:30 AM (Campus Tour & Consultation)">11:30 AM (Campus Tour & Consultation)</option>
                   </select>
                 </div>
               </div>
@@ -178,7 +177,7 @@ export const BookVisitSection: React.FC = () => {
               <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div className="flex items-center gap-2 text-xs text-stone-600 font-medium">
                   <MapPin className="w-4 h-4 text-emerald-700 shrink-0" />
-                  <span>Sector I-14/3, Islamabad (Visiting Hours: 8:00 AM – 3:30 PM)</span>
+                  <span>Sector I-14/3, Islamabad (Visiting Hours: {SCHOOL_INFO.officeHours})</span>
                 </div>
                 <button
                   type="submit"

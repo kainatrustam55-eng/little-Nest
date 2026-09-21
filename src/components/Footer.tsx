@@ -1,6 +1,6 @@
 import React from 'react';
 import { SCHOOL_INFO } from '../data/schoolData';
-import { MapPin, Phone, Clock, MessageCircle, Heart, ArrowUp, Calendar, Sparkles, Send, ExternalLink, Smile, Instagram, Facebook } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, MessageCircle, Heart, ArrowUp, Calendar, Sparkles, Send, ExternalLink, Smile, Instagram, Facebook } from 'lucide-react';
 import { XLogo } from './icons/XLogo';
 
 interface FooterProps {
@@ -227,6 +227,22 @@ export const Footer: React.FC<FooterProps> = ({ onScrollTo, onOpenApply }) => {
                 </div>
               </div>
 
+              {/* Email with Purple / Indigo Filling */}
+              <div className="flex items-center gap-2.5 p-3 rounded-2xl bg-purple-100/90 border-2 border-purple-300 text-purple-950 shadow-2xs">
+                <div className="w-7 h-7 rounded-xl bg-purple-600 text-white flex items-center justify-center shrink-0 shadow-xs">
+                  <Mail className="w-4 h-4" />
+                </div>
+                <div className="min-w-0 flex-1">
+                  <div className="font-child font-black text-purple-900 text-xs uppercase tracking-wider">Official Email</div>
+                  <a
+                    href={`mailto:${SCHOOL_INFO.email}`}
+                    className="font-black text-purple-800 hover:underline text-xs sm:text-sm truncate block"
+                  >
+                    {SCHOOL_INFO.email}
+                  </a>
+                </div>
+              </div>
+
               {/* Timings with Sunny Amber Filling */}
               <div className="flex items-start gap-2.5 p-3 rounded-2xl bg-amber-100/90 border-2 border-amber-300 text-amber-950 shadow-2xs">
                 <div className="w-7 h-7 rounded-xl bg-amber-500 text-white flex items-center justify-center shrink-0 shadow-xs mt-0.5">
@@ -235,7 +251,7 @@ export const Footer: React.FC<FooterProps> = ({ onScrollTo, onOpenApply }) => {
                 <div>
                   <div className="font-child font-black text-amber-900 text-xs uppercase tracking-wider">Campus Timings</div>
                   <div className="font-bold text-stone-800">
-                    Class: {SCHOOL_INFO.academicTimings}
+                    Class: {SCHOOL_INFO.academicTimings} (Mon–Fri)
                   </div>
                   <div className="text-[11px] text-stone-600 font-medium">
                     Tours/Office: {SCHOOL_INFO.officeHours} (Mon–Fri)

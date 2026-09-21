@@ -85,7 +85,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenApply, onS
                     </a>
                   </div>
                   <div className="text-xs text-stone-500 font-medium">
-                    Available during visiting hours (8:00 AM – 3:30 PM)
+                    Available during visiting hours (8:30 AM – 12:00 PM)
                   </div>
                 </div>
               </div>
@@ -110,6 +110,28 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenApply, onS
                   </div>
                   <div className="text-xs text-stone-500 font-medium">
                     Instant message replies for inquiries and tour bookings
+                  </div>
+                </div>
+              </div>
+
+              <div className="pt-3 border-t border-stone-100 flex items-center gap-3.5">
+                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-500 to-indigo-500 text-white flex items-center justify-center shrink-0 shadow-md shadow-purple-200">
+                  <Mail className="w-7 h-7 text-white" />
+                </div>
+                <div>
+                  <span className="text-xs font-child font-black uppercase tracking-wider text-purple-800">
+                    Official Email
+                  </span>
+                  <div className="font-child text-base sm:text-lg font-black text-[#1E3A8A]">
+                    <a
+                      href={`mailto:${SCHOOL_INFO.email}`}
+                      className="hover:text-purple-700 transition-colors break-all"
+                    >
+                      {SCHOOL_INFO.email}
+                    </a>
+                  </div>
+                  <div className="text-xs text-stone-500 font-medium">
+                    Direct inquiries, admission forms & documentation
                   </div>
                 </div>
               </div>
