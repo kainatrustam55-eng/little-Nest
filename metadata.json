@@ -1,0 +1,7 @@
+{
+  "name": "Little Nest Montessori",
+  "description": "Little Nest Montessori is a premier authentic Montessori preschool in Sector I-14/3, Islamabad, Pakistan, offering Playgroup, Nursery, and Kindergarten programs for ages 2 to 6. Where Little Minds Grow.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
