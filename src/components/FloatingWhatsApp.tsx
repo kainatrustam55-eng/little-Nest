@@ -35,7 +35,7 @@ export const FloatingWhatsApp: React.FC<FloatingWhatsAppProps> = ({ onOpenApply,
   };
 
   return (
-    <div className="fixed bottom-5 right-5 z-40 flex flex-col items-end gap-2.5 font-sans">
+    <div className="fixed bottom-5 left-5 z-40 flex flex-col items-start gap-2.5 font-sans">
       {/* Expanded Quick Ask Menu */}
       {isOpen && (
         <div className="bg-white rounded-3xl p-5 shadow-2xl border border-amber-200/90 w-80 mb-2 animate-in slide-in-from-bottom-5 duration-200">
