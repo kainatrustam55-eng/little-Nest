@@ -214,10 +214,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenApply, onS
           <div className="lg:col-span-7 bg-white rounded-3xl border-2 border-sky-200 shadow-2xl p-5 sm:p-7 flex flex-col justify-between">
             <div className="mb-4">
               <h3 className="font-child text-xl sm:text-2xl font-black text-[#1E3A8A] mb-1">
-                Islamabad Sector I-14/3 Map
+                Islamabad & Rawalpindi Campus Location
               </h3>
               <p className="text-xs text-stone-600 font-medium">
-                Conveniently situated in Islamabad for parents in I-14, I-15, I-16, and surrounding sectors.
+                Conveniently situated in Sector I-14/3, easily accessible for families across Islamabad (I-14, I-15, I-16, H-13, G-13) and Rawalpindi (Peshawar Road, Westridge, Golra).
               </p>
             </div>
 
