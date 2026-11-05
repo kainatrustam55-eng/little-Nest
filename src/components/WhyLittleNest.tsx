@@ -24,11 +24,15 @@ export const WhyLittleNest: React.FC<WhyLittleNestProps> = ({ onOpenApply, onScr
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-14">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-child font-bold bg-amber-100/90 text-amber-900 border border-amber-300 shadow-2xs mb-3">
+            <span>⭐</span>
+            <span>The Best School & Montessori Near You</span>
+          </div>
           <h2 className="font-child text-3xl sm:text-4xl lg:text-5xl font-black text-[#1E3A8A] tracking-tight">
             Why Little Nest Montessori?
           </h2>
           <p className="text-sm sm:text-base text-stone-600 mt-3 leading-relaxed font-medium">
-            An authentic Montessori preschool in Sector I-14/3, Islamabad, dedicated to child-led discovery, bilingual literacy, and practical life independence. Where Little Minds Grow.
+            The top-rated authentic Montessori preschool & kindergarten near you in Sector I-14/3, Islamabad, dedicated to child-led discovery, bilingual literacy, and practical life independence. Where Little Minds Grow.
           </p>
         </div>
 

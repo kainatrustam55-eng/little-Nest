@@ -47,7 +47,7 @@ export const HeroBanner: React.FC<HeroBannerProps> = ({ onOpenApply, onScrollTo 
               {/* Location Tag */}
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-child font-bold bg-white text-sky-900 border-2 border-sky-200 shadow-xs">
                 <span className="text-amber-500">🌱</span>
-                <span>Little Nest Montessori • Sector I-14/3, Islamabad</span>
+                <span>Top School Near You • Sector I-14/3, Islamabad</span>
               </div>
 
               {/* Vibrant Main Headline */}
@@ -65,7 +65,7 @@ export const HeroBanner: React.FC<HeroBannerProps> = ({ onOpenApply, onScrollTo 
 
               {/* Keyword-Rich Subtitle for SEO & Parents */}
               <p className="text-stone-600 font-medium text-sm sm:text-base max-w-lg leading-relaxed pt-1">
-                Welcome to <strong className="font-bold text-stone-800">Little Nest Montessori</strong> — the #1 rated Montessori school, preschool, and playgroup in Islamabad & Rawalpindi, conveniently located in Sector I-14/3. We offer authentic Montessori <strong className="font-bold text-stone-800">Playgroup, Nursery, and Kindergarten</strong> programs for ages 2 to 6, nurturing joyful independence, bilingual phonics, and hands-on discovery.
+                Looking for the best <strong className="font-bold text-stone-800">school near me</strong> or top <strong className="font-bold text-stone-800">Montessori near me</strong>? Welcome to <strong className="font-bold text-stone-800">Little Nest Montessori</strong> — the #1 rated preschool, playgroup, and kindergarten in Islamabad & Rawalpindi, located in Sector I-14/3. Nurturing joyful independence, bilingual phonics, and hands-on discovery.
               </p>
 
               {/* Action Buttons (Pill buttons matching reference: Enroll Now pink + Learn More white) */}
