@@ -56,7 +56,7 @@ export default function App() {
       if (ogTitle) ogTitle.content = blogTitle;
       if (ogUrl) ogUrl.content = 'https://littlenestschool.com/blogs';
     } else {
-      const homeTitle = 'Little Nest Montessori | Best Montessori School & Preschool in Islamabad';
+      const homeTitle = 'Little Nest Montessori School | Best Montessori, Preschool & Playgroup in Islamabad';
       const homeDesc =
         'Little Nest Montessori in Sector I-14/3, Islamabad & Rawalpindi offers authentic Playgroup, Nursery & Kindergarten programs (ages 2–6). Book a morning campus visit today!';
       document.title = homeTitle;

@@ -47,14 +47,14 @@ export const HeroBanner: React.FC<HeroBannerProps> = ({ onOpenApply, onScrollTo 
               {/* Location Tag */}
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-child font-bold bg-white text-sky-900 border-2 border-sky-200 shadow-xs">
                 <span className="text-amber-500">🌱</span>
-                <span>Top School Near You • Sector I-14/3, Islamabad</span>
+                <span>Sector I-14/3, Islamabad • Serving Islamabad &amp; Rawalpindi</span>
               </div>
 
               {/* Vibrant Main Headline */}
               <h1 className="font-child text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-[1.15] text-[#1E3A8A]">
-                Best Montessori School in Islamabad & Rawalpindi
-                <span className="block text-2xl sm:text-3xl lg:text-4xl text-[#F43F5E] mt-1.5 drop-shadow-xs font-black">
-                  Top Preschool, Playgroup & Kindergarten • Sector I-14/3
+                Little Nest Montessori School
+                <span className="block text-xl sm:text-2xl lg:text-[1.9rem] text-[#F43F5E] mt-2 drop-shadow-xs font-black leading-snug">
+                  Best Montessori, Preschool, Playgroup &amp; Kindergarten in Islamabad &amp; Rawalpindi
                 </span>
               </h1>
 

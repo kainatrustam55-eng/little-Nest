@@ -34,7 +34,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenApply, onScrollTo, current
             <div className="w-11 h-11 rounded-2xl bg-amber-100/90 border-2 border-amber-300 flex items-center justify-center text-2xl shadow-xs group-hover:scale-105 transition-transform overflow-hidden">
               <img
                 src="/logo.jpeg"
-                alt="Little Nest Montessori School logo - Sector I-14/3 Islamabad"
+                alt="Little Nest Montessori School - Best Preschool in Sector I-14/3 Islamabad"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
                 onError={(e) => {

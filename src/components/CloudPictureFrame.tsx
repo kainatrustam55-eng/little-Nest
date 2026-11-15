@@ -60,7 +60,7 @@ export const CloudPictureFrame: React.FC<CloudPictureFrameProps> = ({
       <div className="flex items-center justify-center mb-2">
         <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-child font-bold bg-white/95 text-sky-900 border-2 border-sky-200 shadow-md backdrop-blur-xs">
           <span className="animate-spin-slow text-amber-500">☀️</span>
-          <span>Montessori Early Years Campus</span>
+          <span>Little Nest Montessori School • Preschool &amp; Kindergarten</span>
           <span className="hidden sm:inline text-stone-400">•</span>
           <span className="hidden sm:inline text-emerald-700">Sector I-14/3, Islamabad</span>
           <span>🌸</span>

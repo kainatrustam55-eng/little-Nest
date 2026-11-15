@@ -68,7 +68,7 @@ export const Footer: React.FC<FooterProps> = ({ onScrollTo, onOpenApply }) => {
                 <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-amber-200 to-rose-200 p-0.5 border-2 border-amber-300 flex items-center justify-center overflow-hidden shrink-0 shadow-md">
                   <img
                     src="/logo.jpeg"
-                    alt="Little Nest Montessori School logo - Where Little Minds Grow"
+                    alt="Little Nest Montessori School Islamabad - Where Little Minds Grow"
                     className="w-full h-full object-cover rounded-[14px]"
                     referrerPolicy="no-referrer"
                     loading="lazy"
