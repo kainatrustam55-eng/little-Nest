@@ -131,6 +131,12 @@ export const Footer: React.FC<FooterProps> = ({ onScrollTo, onOpenApply }) => {
                 <MessageCircle className="w-3.5 h-3.5" />
                 <span>WhatsApp</span>
               </a>
+              <button
+                onClick={() => onScrollTo('blogs')}
+                className="px-4 py-2.5 rounded-full font-child font-black text-xs text-[#1E3A8A] bg-white border-2 border-indigo-200 hover:border-indigo-400 hover:bg-indigo-50 transition-all shadow-xs hover:scale-105 active:scale-95 cursor-pointer flex items-center gap-1.5"
+              >
+                <span>📖 Parent Blog</span>
+              </button>
             </div>
 
             {/* Social Media Channels (Instagram & Facebook) */}

@@ -70,3 +70,44 @@ export interface BookVisitFormData {
   phone: string;
   notes?: string;
 }
+
+export type BlogImageKey = 'blogMorningWelcome' | 'blogMontessoriMaterials' | 'blogCalmClassroom';
+
+export interface BlogSectionBlock {
+  id: string;
+  heading: string;
+  paragraphs: string[];
+  subheading?: string;
+  bulletPoints?: string[];
+  pullQuote?: string;
+  image?: {
+    key: BlogImageKey;
+    alt: string;
+    caption: string;
+    aspectClass?: string;
+  };
+}
+
+export interface BlogPost {
+  slug: string;
+  category: string;
+  title: string;
+  subtitle: string;
+  excerpt: string;
+  authorName: string;
+  authorRole: string;
+  publishedDate: string;
+  publishedDateISO: string;
+  readTime: string;
+  locationTag: string;
+  coverImage: {
+    key: BlogImageKey;
+    alt: string;
+    caption: string;
+  };
+  sections: BlogSectionBlock[];
+  parentChecklistTitle: string;
+  parentChecklist: string[];
+  closingNote: string;
+}
+

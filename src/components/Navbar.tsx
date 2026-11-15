@@ -6,9 +6,10 @@ import { XLogo } from './icons/XLogo';
 interface NavbarProps {
   onOpenApply: () => void;
   onScrollTo: (id: string) => void;
+  currentPage?: 'home' | 'blogs';
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ onOpenApply, onScrollTo }) => {
+export const Navbar: React.FC<NavbarProps> = ({ onOpenApply, onScrollTo, currentPage = 'home' }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleNavClick = (id: string) => {
@@ -144,7 +145,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenApply, onScrollTo }) => {
 
       {/* Primary Navigation Ribbon (Matching the rounded white card with icons in reference image) */}
       <div className="hidden md:block bg-gradient-to-r from-sky-50/80 via-white to-sky-50/80 border-t border-sky-100/80 py-1.5">
-        <nav className="max-w-5xl mx-auto px-4 flex items-center justify-center gap-7 text-xs font-bold text-stone-600">
+        <nav className="max-w-6xl mx-auto px-4 flex items-center justify-center gap-4 lg:gap-6 text-xs font-bold text-stone-600">
           <button
             onClick={() => handleNavClick('top')}
             className="hover:text-sky-600 transition-colors py-1 flex items-center gap-1 group cursor-pointer"
@@ -208,6 +209,16 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenApply, onScrollTo }) => {
             <span className="text-sm group-hover:scale-110 transition-transform">📍</span>
             <span>CONTACT</span>
           </button>
+
+          <button
+            onClick={() => handleNavClick('blogs')}
+            className={`transition-colors py-1 flex items-center gap-1 group cursor-pointer ${
+              currentPage === 'blogs' ? 'text-[#F43F5E] font-extrabold' : 'hover:text-[#F43F5E]'
+            }`}
+          >
+            <span className="text-sm group-hover:scale-110 transition-transform">📖</span>
+            <span>BLOGS</span>
+          </button>
         </nav>
       </div>
 
@@ -270,6 +281,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenApply, onScrollTo }) => {
             >
               <span>📍</span>
               <span>Contact</span>
+            </button>
+            <button
+              onClick={() => handleNavClick('blogs')}
+              className="col-span-2 p-2.5 text-left rounded-xl bg-indigo-50 text-indigo-900 flex items-center gap-2"
+            >
+              <span>📖</span>
+              <span>Parenting Blogs &amp; Guides</span>
             </button>
           </div>
 
