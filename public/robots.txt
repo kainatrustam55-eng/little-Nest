@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://littlenest.edu.pk/sitemap.xml
+Sitemap: https://littlenestschool.com/sitemap.xml
