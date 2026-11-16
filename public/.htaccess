@@ -2,14 +2,28 @@
   RewriteEngine On
   RewriteBase /
   RewriteRule ^index\.html$ - [L]
+  # Never rewrite sitemap.xml, robots.txt, or static files to index.html
+  RewriteCond %{REQUEST_URI} !\.(xml|txt|jpg|jpeg|png|gif|webp|svg|ico|css|js|json|woff2?)$ [NC]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule . /index.html [L]
 </IfModule>
 
+# Ensure sitemap.xml is always served as valid XML, never cached as HTML
+<IfModule mod_mime.c>
+  AddType application/xml .xml
+</IfModule>
+
+<Files "sitemap.xml">
+  <IfModule mod_headers.c>
+    Header set Content-Type "application/xml; charset=UTF-8"
+    Header set Cache-Control "no-cache, must-revalidate"
+  </IfModule>
+</Files>
+
 # Enable Gzip / Deflate Compression
 <IfModule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml text/css text/javascript application/javascript application/json
 </IfModule>
 
 # Cache headers for static assets

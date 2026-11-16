@@ -14,6 +14,7 @@ import { FaqSection } from './components/FaqSection';
 import { Footer } from './components/Footer';
 import { FloatingWhatsApp } from './components/FloatingWhatsApp';
 import { ApplyModal } from './components/ApplyModal';
+import { AdmissionsNewsletterPopup } from './components/AdmissionsNewsletterPopup';
 
 type AppPage = 'home' | 'blogs';
 
@@ -183,6 +184,13 @@ export default function App() {
       <ApplyModal
         isOpen={isApplyModalOpen}
         onClose={() => setIsApplyModalOpen(false)}
+      />
+
+      {/* Admissions Open 2026-27 Pamphlet & Newsletter Popup (Main Page) */}
+      <AdmissionsNewsletterPopup
+        isMainPage={currentPage === 'home'}
+        onOpenApply={() => setIsApplyModalOpen(true)}
+        onScrollTo={handleScrollTo}
       />
     </div>
   );
