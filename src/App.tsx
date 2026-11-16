@@ -59,7 +59,7 @@ export default function App() {
       if (ogUrl) ogUrl.content = 'https://littlenestschool.com/blogs';
       if (ogImage) ogImage.content = 'https://littlenestschool.com/little-nest-montessori-morning-welcome.jpg';
     } else {
-      const homeTitle = 'Little Nest Montessori School | Best Montessori, Preschool & Playgroup in Islamabad';
+      const homeTitle = 'Little Nest Montessori School | Preschool & Kindergarten in I-14/3 Islamabad';
       const homeDesc =
         'Little Nest Montessori in Sector I-14/3, Islamabad & Rawalpindi offers authentic Playgroup, Nursery & Kindergarten programs (ages 2–6). Book a morning campus visit today!';
       document.title = homeTitle;
