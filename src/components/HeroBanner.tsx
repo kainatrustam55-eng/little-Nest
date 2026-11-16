@@ -124,14 +124,14 @@ export const HeroBanner: React.FC<HeroBannerProps> = ({ onOpenApply, onScrollTo 
               </div>
 
               {/* Main Photo Card */}
-              <div className="relative z-10 w-full max-w-md rounded-3xl overflow-hidden border-4 border-white shadow-2xl bg-white ring-2 ring-sky-200/80">
-                <div className="aspect-[4/3] w-full overflow-hidden bg-amber-50 relative">
+              <div className="relative z-10 w-full max-w-sm rounded-3xl overflow-hidden border-4 border-white shadow-2xl bg-white ring-2 ring-sky-200/80">
+                <div className="aspect-[3/4] w-full overflow-hidden bg-amber-50 relative">
                   <img
-                    src="/little-nest-montessori-islamabad-classroom.jpg"
-                    alt="Happy Montessori preschool children learning with wooden apparatus at Little Nest Montessori School in Sector I-14/3, Islamabad"
-                    width={1200}
-                    height={896}
-                    className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
+                    src="/assets/aistudio/Preschool_Shapes_and_Learning_Fun_430fe195.png"
+                    alt="Little Nest Montessori School preschool students learning with shape puzzles and workbooks in Sector I-14/3, Islamabad"
+                    width={1086}
+                    height={1448}
+                    className="w-full h-full object-cover object-top transform hover:scale-105 transition-transform duration-500"
                     referrerPolicy="no-referrer"
                     onError={(e) => {
                       const img = e.currentTarget;
