@@ -45,6 +45,7 @@ export default function App() {
     const metaDesc = document.querySelector<HTMLMetaElement>('meta[name="description"]');
     const ogTitle = document.querySelector<HTMLMetaElement>('meta[property="og:title"]');
     const ogUrl = document.querySelector<HTMLMetaElement>('meta[property="og:url"]');
+    const ogImage = document.querySelector<HTMLMetaElement>('meta[property="og:image"]');
 
     if (currentPage === 'blogs') {
       const blogTitle = 'Best Montessori School & Preschool Blog in Islamabad | Little Nest Montessori';
@@ -55,6 +56,7 @@ export default function App() {
       if (metaDesc) metaDesc.content = blogDesc;
       if (ogTitle) ogTitle.content = blogTitle;
       if (ogUrl) ogUrl.content = 'https://littlenestschool.com/blogs';
+      if (ogImage) ogImage.content = 'https://littlenestschool.com/little-nest-montessori-morning-welcome.jpg';
     } else {
       const homeTitle = 'Little Nest Montessori School | Best Montessori, Preschool & Playgroup in Islamabad';
       const homeDesc =
@@ -64,6 +66,7 @@ export default function App() {
       if (metaDesc) metaDesc.content = homeDesc;
       if (ogTitle) ogTitle.content = homeTitle;
       if (ogUrl) ogUrl.content = 'https://littlenestschool.com/';
+      if (ogImage) ogImage.content = 'https://littlenestschool.com/little-nest-montessori-islamabad-classroom.jpg';
     }
   }, [currentPage]);
 

@@ -1,19 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://littlenestschool.com/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://littlenestschool.com/little-nest-montessori-islamabad-classroom.jpg</image:loc>
+      <image:title>Little Nest Montessori School Islamabad Preschool Classroom</image:title>
+      <image:caption>Happy children exploring Montessori materials at Little Nest Montessori School in Sector I-14/3, Islamabad</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://littlenestschool.com/blogs</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://littlenestschool.com/little-nest-montessori-morning-welcome.jpg</image:loc>
+      <image:title>Montessori School Drop-Off &amp; Parenting Guide Islamabad</image:title>
+      <image:caption>Teacher warmly welcoming a toddler and mother at Little Nest Montessori School in Islamabad</image:caption>
+    </image:image>
   </url>
 </urlset>
-
