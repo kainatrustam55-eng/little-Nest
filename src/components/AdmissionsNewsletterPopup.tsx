@@ -136,7 +136,7 @@ export const AdmissionsNewsletterPopup: React.FC<AdmissionsNewsletterPopupProps>
             <div className="w-full max-w-md aspect-square rounded-2xl overflow-hidden bg-white shadow-md border border-white">
               {!posterError ? (
                 <img
-                  src="/assets/aistudio/Little_Nest_Montessori_Admissions_Poster_9e2b17e9.png"
+                  src="/little-nest-admissions-2026.png"
                   alt="Little Nest Montessori Admissions Open 2026-27 Pamphlet for Playgroup, Nursery and Kindergarten in Sector I-14/3 Islamabad"
                   className="w-full h-full object-contain"
                   referrerPolicy="no-referrer"

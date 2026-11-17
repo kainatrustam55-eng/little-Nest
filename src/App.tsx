@@ -67,7 +67,7 @@ export default function App() {
       if (metaDesc) metaDesc.content = homeDesc;
       if (ogTitle) ogTitle.content = homeTitle;
       if (ogUrl) ogUrl.content = 'https://littlenestschool.com/';
-      if (ogImage) ogImage.content = 'https://littlenestschool.com/assets/aistudio/Preschool_Shapes_and_Learning_Fun_430fe195.png';
+      if (ogImage) ogImage.content = 'https://littlenestschool.com/little-nest-classroom-shapes.png';
     }
   }, [currentPage]);
 
