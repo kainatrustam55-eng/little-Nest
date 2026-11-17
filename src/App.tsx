@@ -6,6 +6,7 @@ import { ProgramsSection } from './components/ProgramsSection';
 import { LearningAreasSection } from './components/LearningAreasSection';
 import { DayAtLittleNestSection } from './components/DayAtLittleNestSection';
 import { WatchMeGrowSection } from './components/WatchMeGrowSection';
+import { GoogleReviewsSection } from './components/GoogleReviewsSection';
 import { AdmissionSection } from './components/AdmissionSection';
 import { BookVisitSection } from './components/BookVisitSection';
 import { ContactSection } from './components/ContactSection';
@@ -149,6 +150,12 @@ export default function App() {
 
             {/* 6. 📏 Watch Me Grow (6-Step Developmental Journey) */}
             <WatchMeGrowSection />
+
+            {/* 6.5. ⭐ Verified 5.0 Google Reviews */}
+            <GoogleReviewsSection
+              onOpenApply={() => setIsApplyModalOpen(true)}
+              onScrollTo={handleScrollTo}
+            />
 
             {/* 7. 📝 Online Admission (Simple: Child Name, Age, Parent Name, Phone, Program) */}
             <AdmissionSection />

@@ -111,3 +111,18 @@ export interface BlogPost {
   closingNote: string;
 }
 
+export interface GoogleReviewItem {
+  id: string;
+  reviewerName: string;
+  initial: string;
+  avatarBg: string;
+  badgeText?: string;
+  isLocalGuide?: boolean;
+  rating: number;
+  timeAgo: string;
+  isNew?: boolean;
+  text: string;
+  screenshotUrl: string;
+}
+
+

@@ -137,6 +137,12 @@ export const Footer: React.FC<FooterProps> = ({ onScrollTo, onOpenApply }) => {
               >
                 <span>📖 Parent Blog</span>
               </button>
+              <button
+                onClick={() => onScrollTo('reviews')}
+                className="px-4 py-2.5 rounded-full font-child font-black text-xs text-amber-900 bg-amber-50 border-2 border-amber-300 hover:border-amber-400 hover:bg-amber-100 transition-all shadow-xs hover:scale-105 active:scale-95 cursor-pointer flex items-center gap-1.5"
+              >
+                <span>⭐ 5.0 Google Reviews</span>
+              </button>
             </div>
 
             {/* Social Media Channels (Instagram & Facebook) */}

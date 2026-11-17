@@ -3,7 +3,7 @@ import { SCHOOL_INFO } from '../data/schoolData';
 import { SCHOOL_IMAGES } from '../assets/images';
 import { CloudPictureFrame } from './CloudPictureFrame';
 import { PlayLearnGrowRibbon } from './PlayLearnGrowRibbon';
-import { Sparkles, Calendar, ArrowRight, Heart, Sun, MapPin, CheckCircle2, ChevronRight, ShieldCheck, Award, Smile, BookOpen } from 'lucide-react';
+import { Sparkles, Calendar, ArrowRight, Heart, Sun, MapPin, CheckCircle2, ChevronRight, ShieldCheck, Award, Smile, BookOpen, Star } from 'lucide-react';
 
 interface HeroBannerProps {
   onOpenApply: () => void;
@@ -110,6 +110,14 @@ export const HeroBanner: React.FC<HeroBannerProps> = ({ onOpenApply, onScrollTo 
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
                   <span>Loving Female Guides</span>
                 </div>
+                <button
+                  type="button"
+                  onClick={() => onScrollTo('reviews')}
+                  className="flex items-center gap-1.5 text-[#1E3A8A] hover:text-[#F43F5E] transition-colors cursor-pointer"
+                >
+                  <Star className="w-4 h-4 text-[#FBBC05] fill-[#FBBC05] shrink-0" />
+                  <span className="underline decoration-amber-300 underline-offset-4 font-bold">5.0 Google Reviews</span>
+                </button>
               </div>
             </div>
 
